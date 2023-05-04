@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name = "Parallel longest substringe" parallel="methods" thread-count="5">
+    <test name="LongestSubstring Tests">
+        <groups>
+            <run>
+                <include name="longestSubstring"/>
+                <include name="cutting"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="Tests"></class>
+        </classes>
+    </test>
+</suite>

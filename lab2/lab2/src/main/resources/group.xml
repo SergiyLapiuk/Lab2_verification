@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name = "Cutting Test Suite" verbose="1">
+    <test name="Cutting Test">
+        <groups>
+            <run>
+                <exclude name="longestSubstring"/>
+                <include name="cutting"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="Tests"></class>
+        </classes>
+    </test>
+</suite>
